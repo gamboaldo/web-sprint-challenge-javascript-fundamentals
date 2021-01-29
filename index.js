@@ -101,25 +101,10 @@ const zooAnimals = [
   */
 
 function animalNames(/*Your Code Here*/) {
-  // const displayNames = [];
-  // zooAnimals.forEach(function (item) {
-  //   return displayNames.push(
-  //     `name: ${item.animal_name}, scientific: ${item.scientific_name} `
-  //   );
-  // });
-
-  return [
-    "name: Jackal, asiatic, scientific: Canis aureus",
-    "name: Screamer, southern, scientific: Chauna torquata",
-    "name: White spoonbill, scientific: Platalea leucordia",
-    "name: White-cheeked pintail, scientific: Anas bahamensis",
-    "name: Black-backed jackal, scientific: Canis mesomelas",
-    "name: Brolga crane, scientific: Grus rubicundus",
-    "name: Common melba finch, scientific: Pytilia melba",
-    "name: Pampa gray fox, scientific: Pseudalopex gymnocercus",
-    "name: Hawk-eagle, crowned, scientific: Spizaetus coronatus",
-    "name: Australian pelican, scientific: Pelecanus conspicillatus",
-  ];
+  const me = zooAnimals.map(
+    (item) => `name: ${item.animal_name}, scientific: ${item.scientific_name}`
+  );
+  return me;
 }
 
 /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
